@@ -1,0 +1,24 @@
+﻿<Window x:Class="PaperPlane.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PaperPlane"
+        mc:Ignorable="d"
+        Title="PaperPlane" Height="421.951" Width="774.39">
+    <Grid Margin="0,0,1,0" RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.309"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <TextBox x:Name="UsernameTxtBox" HorizontalAlignment="Left" Height="19" Margin="205,206,0,0" TextWrapping="Wrap" Text="{Binding Path=Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="103" TextChanged="TextBox_TextChanged"/>
+        <Label Content="PaperPlane" HorizontalAlignment="Center" Margin="155.5,83,114.952,0" VerticalAlignment="Top" Height="81" Width="396.548" FontSize="48" FontWeight="Bold" FontStyle="Italic" Opacity="0.7" Background="{x:Null}" Foreground="Black" UseLayoutRounding="False"/>
+        <TextBox x:Name="PasswordTxtBox" HorizontalAlignment="Left" Height="19" Margin="353,209,0,0" TextWrapping="Wrap" Text="{Binding Path=Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="103" TextChanged="TextBox_TextChanged"/>
+        <Button x:Name="LoginButton" Content="Login" Click ="LoginButton_Click"  HorizontalAlignment="Left" Margin="282,258,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
